@@ -74,8 +74,8 @@ export async function getStaticPaths() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/posts`)
   const posts = await res.json()
 
-  const paths = posts?.map((post) => ({
-    params: { post: post.slug }
+  const paths = posts?.map(({ slug }) => ({
+    params: { post: slug }
   }))
 
   return {
