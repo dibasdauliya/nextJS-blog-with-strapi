@@ -8,6 +8,8 @@ $ npm i
 $ npm run dev
 ```
 
+Also, [set up the environmental variables](https://github.com/dibasdauliya/nextJS-blog-with-stapi-api/tree/main/nextJS).
+
 ## Getting started for Strapi
 
 ```bash
